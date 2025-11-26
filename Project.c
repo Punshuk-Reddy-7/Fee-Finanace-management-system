@@ -12,7 +12,7 @@ void addStudent(struct Student students[], int *count) {
     printf("Enter Student ID: ");
     scanf("%d", &students[*count].id);
     printf("Enter Student Name: ");
-    scanf(" %[^\n]%*c", students[*count].name);
+    scanf("%s", students[*count].name);
     printf("Enter Fee Amount: ");
     scanf("%f", &students[*count].fee);
     (*count)++;
