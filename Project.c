@@ -1,56 +1,44 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-struct Student {
-    int id;
-    char name[50];
-    float fee;
-};
-
-void addStudent(struct Student students[], int *count) {
-    printf("Enter Student ID: ");
-    scanf("%d", &students[*count].id);
-    printf("Enter Student Name: ");
-    scanf("%s", students[*count].name);
-    printf("Enter Fee Amount: ");
-    scanf("%f", &students[*count].fee);
-    (*count)++;
-    printf("Student record added successfully.\n");
-}
-
-void displayStudents(struct Student students[], int count) {
-    printf("\nID\tName\t\tFee\n");
-    printf("---------------------------------\n");
-    for(int i = 0; i < count; i++) {
-        printf("%d\t%s\t\t%.2f\n", students[i].id, students[i].name, students[i].fee);
-    }
-}
-
 int main() {
-    struct Student students[100];
-    int count = 0;
-    int choice;
+    int ids[100];           
+    char names[100][50];    
+    float fees[100];        
+    int count = 0, choice;
 
-    while(1) {
+    while (1) {
         printf("\nFee Management System\n");
         printf("1. Add Student Fee Record\n");
         printf("2. Display All Records\n");
         printf("3. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-        switch(choice) {
-            case 1:
-                addStudent(students, &count);
-                break;
-            case 2:
-                displayStudents(students, count);
-                break;
-            case 3:
-                printf("Exiting System.\n");
-                exit(0);
-            default:
-                printf("Invalid choice, try again.\n");
+
+        if (choice == 1) {
+        printf("Enter Student ID: ");
+        scanf("%d", &ids[count]);
+        printf("Enter Student Name: ");
+        scanf(" %[^\n]", names[count]);
+
+        printf("Enter Fee Amount: ");
+        scanf("%f", &fees[count]);     
+
+        count++;
+        printf("Student record added successfully.\n");
+    }
+
+         else if (choice == 2) {
+            printf("\nID\tName\t\tFee\n");
+            printf("---------------------------------\n");
+            for (int i = 0; i < count; i++) {
+                printf("%d\t%s\t\t%.2f\n", ids[i], names[i], fees[i]);
+            }
+        } else if (choice == 3) {
+            printf("Exiting System.\n");
+            break;
+        } else {
+            printf("Invalid choice, try again.\n");
         }
     }
     return 0;
