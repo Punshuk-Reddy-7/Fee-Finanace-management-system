@@ -34,5 +34,16 @@ Enter your choice:
 | 102 | 9       | Priya Mehra  | 9B    | 12000 | No   |
 | 103 | 21      | Amit Reddy   | 11C   | 18000 | Yes  |
 
+How to Use:
+Prerequisites
+Make sure you have a C compiler installed (e.g., gcc).
+
+Compilation
+To compile the code, open a terminal in the folder containing the source code file (e.g., program.c) and run:
+
+Running
+To run the compiled program, execute the command:
+./a.exe
+This will run the program and show the output in the terminal.
 
 
