@@ -46,18 +46,18 @@ int main() {
             scanf("%d", &delRoll);
             for (i = 0; i < count; i++) {
                 if (rollNumbers[i] == delRoll) {
-                    // manually move every element left
+                    
                     for (j = i; j < count - 1; j++) {
                         ids[j] = ids[j + 1];
                         rollNumbers[j] = rollNumbers[j + 1];
-                        // names: manual character copy (no strcpy)
+                       
                         int k = 0;
                         while (names[j + 1][k] != '\0') {
                             names[j][k] = names[j + 1][k];
                             k++;
                         }
                         names[j][k] = '\0';
-                        // classes: manual character copy
+                       
                         k = 0;
                         while (classes[j + 1][k] != '\0') {
                             classes[j][k] = classes[j + 1][k];
@@ -65,7 +65,7 @@ int main() {
                         }
                         classes[j][k] = '\0';
                         fees[j] = fees[j + 1];
-                        // paidStatus: manual character copy
+                        
                         k = 0;
                         while (paidStatus[j + 1][k] != '\0') {
                             paidStatus[j][k] = paidStatus[j + 1][k];
