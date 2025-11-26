@@ -19,8 +19,20 @@ Use of two-dimensional arrays for strings (names, class, paid status)—each stu
 Loops: while(1) loop for menu-driven interaction (keeps the program running until exit)
 for loop used for displaying and deleting records
 
-Input/Output Functions: scanf for getting user input
-%d for integers, %f for floats, %s and %[^\n] for strings with and without spaces
-printf for displaying menus, results, and record tables
-
 Basic Control Structures: if, else if, and else for menu choices and decision-making
+
+Example: Fee Management System
+1. Add Student Fee Record
+2. Display All Records
+3. Delete Student Record
+4. Exit
+Enter your choice:
+
+| ID  | Roll No | Name         | Class | Fee   | Paid |
+| --- | ------- | ------------ | ----- | ----- | ---- |
+| 101 | 12      | Rohit Sharma | 10A   | 15000 | Yes  |
+| 102 | 9       | Priya Mehra  | 9B    | 12000 | No   |
+| 103 | 21      | Amit Reddy   | 11C   | 18000 | Yes  |
+
+
+
