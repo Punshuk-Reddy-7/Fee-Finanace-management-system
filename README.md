@@ -1,5 +1,5 @@
 # Fee-Finanace-management-system 
-Description: A simple C program for managing student fee records using only arrays and strings (no structures or files). The system lets you add, view, and delete student fee records. Designed for beginners in C programming based on Apna College’s curriculum.
+Description: A simple C program for managing student fee records using only arrays and strings (no structures or files). The system lets you add, view, and delete student fee records. 
 
 Features: Add a student record with ID, roll number, name, class/section, fee amount, and paid status.
 Display all student fee records in a tabular format.
